@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --primary: #4628ff;
+  --warning: #ffd129;
+  --danger: #eb3f27;
+  --success: #75fa83;
+  --white: #fdfdfd;
+  --dark: #181717;
+}
+
 *,
 *::before,
 *::after {
@@ -20,4 +31,90 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* colors & styles */
+.btn__primary__solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn__warning__solid {
+  background-color: var(--warning);
+  color: var(--dark);
+  border: none;
+}
+
+.btn__danger__solid {
+  background-color: var(--danger);
+  color: var(--white);
+  border: none;
+}
+
+.btn__success__solid {
+  background-color: var(--success);
+  color: var(--white);
+  border: none;
+}
+
+.btn__primary__outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn__warning__outline {
+  background-color: transparent;
+  border: 2px solid var(--warning);
+  color: var(--warning);
+}
+
+.btn__danger__outline {
+  background-color: transparent;
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+
+.btn__danger__outline:hover {
+  background-color: var(--danger);
+  border: 2px solid var(--danger);
+  color: var(--white);
+}
+
+.btn__success__outline {
+  background-color: transparent;
+  border: 2px solid var(--success);
+  color: var(--success);
+}
+.btn__success__outline:hover {
+  background-color: var(--success);
+  border: 2px solid var(--success);
+  color: var(--white);
+}
+
+/* sizes */
+
+.btn__medium {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.btn__large {
+  padding: 15px 30px;
+  font-size: 20px;
 }
