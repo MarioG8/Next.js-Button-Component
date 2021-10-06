@@ -10,68 +10,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Button
-        onClick={() => console.log("You Clicked Me!")}
         type="button"
         buttonStyle="btn__primary__solid"
         buttonSize="btn__large"
       >
-        Buy Now
+        Click Me
       </Button>
       <Button
-        onClick={() => console.log("You Clicked Me!")}
+        link="https://mariuszgolik-portfolio.vercel.app/"
         type="button"
-        buttonStyle="btn__warning__solid"
-        buttonSize="btn__large"
+        buttonStyle="btn__primary__solid"
+        buttonSize="btn__medium"
       >
-        Buy Now
+        Click Me
       </Button>
       <Button
-        onClick={() => console.log("You Clicked Me!")}
+        link="https://mariuszgolik-portfolio.vercel.app/"
+        target="_blank"
         type="button"
-        buttonStyle="btn__danger__solid"
-        buttonSize="btn__large"
+        buttonStyle="btn__primary__solid"
+        buttonSize="btn__small"
       >
-        Buy Now
-      </Button>
-      <Button
-        onClick={() => console.log("You Clicked Me!")}
-        type="button"
-        buttonStyle="btn__success__solid"
-        buttonSize="btn__large"
-      >
-        Buy Now
-      </Button>
-      <Button
-        onClick={() => console.log("You Clicked Me!")}
-        type="button"
-        buttonStyle="btn__primary__outline"
-        buttonSize="btn__large"
-      >
-        Buy Now
-      </Button>
-      <Button
-        onClick={() => console.log("You Clicked Me!")}
-        type="button"
-        buttonStyle="btn__warning__outline"
-        buttonSize="btn__large"
-      >
-        Buy Now
-      </Button>
-      <Button
-        onClick={() => console.log("You Clicked Me!")}
-        type="button"
-        buttonStyle="btn__danger__outline"
-        buttonSize="btn__large"
-      >
-        Buy Now
-      </Button>
-      <Button
-        onClick={() => console.log("You Clicked Me!")}
-        type="button"
-        buttonStyle="btn__success__outline"
-        buttonSize="btn__large"
-      >
-        Buy Now
+        Click Me
       </Button>
     </div>
   );
