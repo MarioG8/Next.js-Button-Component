@@ -21,7 +21,8 @@ function Button({ children, type, onClick, buttonStyle, buttonSize }) {
 
   return (
     <button
-      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      // className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      className={`${styles.btn} ${styles[checkButtonStyle]} ${styles[checkButtonSize]}`}
       onClick={onClick}
       type={type}
     >
